@@ -38,4 +38,13 @@ public interface CurrencyRateDao {
     @Query("SELECT * FROM currency_rates WHERE currency = :currency AND rateDate BETWEEN :fromDate AND :toDate ORDER BY rateDate ASC")
     List<CurrencyRateEntity> getRatesBetween(String currency, String fromDate, String toDate);
 
+    @Query("SELECT COUNT(*) FROM currency_rates WHERE rateDate = :date")
+    int countByDate(String date);
+
+    @Query("SELECT MAX(rateDate) FROM currency_rates")
+    String getLastLoadedDate();
+
+    @Insert
+    void insertAll(List<CurrencyRateEntity> rates);
+
 }

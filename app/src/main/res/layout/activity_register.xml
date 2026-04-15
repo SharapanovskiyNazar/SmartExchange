@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/maib_bg"
@@ -12,67 +13,147 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:title=""
+            app:navigationIconTint="@color/maib_text"
+            app:titleTextColor="@color/maib_text" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:layout_marginBottom="24dp"
-            android:paddingTop="48dp"
             android:text="Create account"
             android:textColor="@color/maib_green_dark"
-            android:textSize="22sp"
+            android:textSize="24sp"
             android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/etIdnp"
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/maib_text"
-            android:hint="IDNP"/>
+            android:hint="IDNP"
+            app:boxBackgroundColor="@color/maib_white"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusTopStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxStrokeColor="@color/maib_green_dark"
+            app:hintTextColor="@color/maib_hint">
 
-        <EditText
-            android:id="@+id/etFirstName"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etIdnp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/maib_text"
+                android:textColorHint="@color/maib_hint" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/maib_text"
+            android:layout_marginTop="12dp"
             android:hint="First name"
-            android:layout_marginTop="12dp"/>
+            app:boxBackgroundColor="@color/maib_white"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusTopStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxStrokeColor="@color/maib_green_dark"
+            app:hintTextColor="@color/maib_hint">
 
-        <EditText
-            android:id="@+id/etLastName"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/maib_text"
+                android:textColorHint="@color/maib_hint" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/maib_text"
+            android:layout_marginTop="12dp"
             android:hint="Last name"
-            android:layout_marginTop="12dp"/>
+            app:boxBackgroundColor="@color/maib_white"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusTopStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxStrokeColor="@color/maib_green_dark"
+            app:hintTextColor="@color/maib_hint">
 
-        <EditText
-            android:id="@+id/etPhone"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/maib_text"
+                android:textColorHint="@color/maib_hint" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/maib_text"
+            android:layout_marginTop="12dp"
             android:hint="Phone number"
-            android:inputType="phone"
-            android:layout_marginTop="12dp"/>
+            app:boxBackgroundColor="@color/maib_white"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusTopStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxStrokeColor="@color/maib_green_dark"
+            app:hintTextColor="@color/maib_hint">
 
-        <EditText
-            android:id="@+id/etPassword"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:textColor="@color/maib_text"
+                android:textColorHint="@color/maib_hint" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/maib_text"
+            android:layout_marginTop="12dp"
             android:hint="Password"
-            android:inputType="textPassword"
-            android:layout_marginTop="12dp"/>
+            app:boxBackgroundColor="@color/maib_white"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusTopStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxStrokeColor="@color/maib_green_dark"
+            app:endIconMode="password_toggle"
+            app:hintTextColor="@color/maib_hint">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="@color/maib_text"
+                android:textColorHint="@color/maib_hint" />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
             android:id="@+id/tvMessage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:textColor="@color/maib_red"
-            android:visibility="gone"
-            android:layout_marginTop="8dp"/>
+            android:textSize="14sp"
+            android:visibility="gone" />
 
-        <Button
-            android:id="@+id/btnRegister"
+        <Button android:id="@+id/btnRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="REGISTER"

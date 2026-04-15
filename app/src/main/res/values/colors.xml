@@ -9,7 +9,10 @@
     <color name="maib_bg">#F6F7F8</color>
     <color name="maib_white">#FFFFFF</color>
     <color name="maib_text">#1A1A1A</color>
-    <color name="maib_text_muted">#1E1F22</color>
+    <color name="maib_hint">#6B7280</color>
+    <color name="maib_border">#E5E7EB</color>
 
+
+    <color name="maib_text_muted">#1E1F22</color>
 </resources>
 

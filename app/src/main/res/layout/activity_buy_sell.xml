@@ -1,56 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="24dp"
-    android:clipToPadding="false">
+    android:clipToPadding="false"
+    android:background="@color/maib_bg">
 
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="24dp"
+        android:layout_marginTop="24dp"
         android:text="Exchange"
         android:textColor="@color/maib_green_dark"
-        android:textSize="20sp"
+        android:textSize="22sp"
         android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/etAmount"
+    <!-- AMOUNT -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilAmount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/maib_text"
+        android:layout_marginTop="16dp"
         android:hint="Amount"
-        android:inputType="numberDecimal"
-        android:layout_marginTop="16dp"/>
+        app:boxBackgroundColor="@color/maib_white"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusTopStart="16dp"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusBottomStart="16dp"
+        app:boxCornerRadiusBottomEnd="16dp"
+        app:boxStrokeColor="@color/maib_green_dark"
+        app:hintTextColor="@color/maib_hint">
 
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:textColor="@color/maib_text"
+            android:textColorHint="@color/maib_hint" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- TYPE -->
     <RadioGroup
         android:id="@+id/rgType"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp">
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/maib_text"
-            android:checked="true"
-            android:id="@+id/rbBuy"
-            android:text="Buy"/>
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/maib_text"
-            android:id="@+id/rbSell"
-            android:text="Sell"/>
-    </RadioGroup>
-
-    <Button
-        android:id="@+id/btnOk"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbBuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Buy"
+            android:textColor="@color/maib_text"
+            android:buttonTint="@color/maib_green_dark"
+            android:layout_marginEnd="24dp"/>
+
+        <RadioButton
+            android:id="@+id/rbSell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sell"
+            android:textColor="@color/maib_text"
+            android:buttonTint="@color/maib_green_dark"/>
+    </RadioGroup>
+
+    <!-- BUTTON -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnOk"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="24dp"
         android:text="OK"
-        android:layout_marginTop="24dp"/>
+        android:textAllCaps="false"
+        android:textColor="@color/maib_white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/maib_green"
+        app:cornerRadius="16dp" />
+
 </LinearLayout>

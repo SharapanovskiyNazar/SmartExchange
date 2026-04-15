@@ -44,4 +44,7 @@ dependencies {
 
     // MPAndroidChart for charts
     implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+    // NBM rates
+    implementation 'com.squareup.okhttp3:okhttp:4.12.0'
 }

@@ -92,7 +92,9 @@ public class OpenAccountActivity extends AppCompatActivity {
                 if (currencies.isEmpty()) {
                     tvMessage.setText("All accounts already opened");
                     tvMessage.setVisibility(View.VISIBLE);
-                    btnOpen.setEnabled(false);
+                   // btnOpen.setEnabled(false);
+                    btnOpen.setVisibility(View.GONE);
+                    spCurrency.setVisibility(View.GONE);
                 }
             });
         });
