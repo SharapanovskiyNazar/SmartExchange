@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:clipToPadding="false"
+    android:background="@color/maib_bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:paddingTop="48dp"
+        android:text="Open new account"
+        android:textColor="@color/maib_green_dark"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <!-- Currency selector -->
+
+    <Spinner
+        android:id="@+id/spCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/bg_spinner"
+        android:dropDownVerticalOffset="4dp"
+        android:popupBackground="@color/maib_white"
+
+        android:spinnerMode="dropdown" />
+
+
+    <!-- Message -->
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/maib_red"
+        android:visibility="gone"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Button -->
+    <Button
+        android:id="@+id/btnOpen"
+        style="@style/MaibButtonPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OPEN ACCOUNT" />
+</LinearLayout>

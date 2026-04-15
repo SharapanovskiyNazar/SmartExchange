@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/maib_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:clipToPadding="false">
+
+    <!-- TOOLBAR -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:title=""
+        app:popupTheme="@style/ThemeOverlay.Material3.Light"/>
+
+    <!-- LOGO -->
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="314dp"
+        android:layout_height="160dp"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/smartexchange_logo_desc"
+        android:scaleType="fitCenter"
+        android:src="@drawable/smart_exchange_logo" />
+
+
+
+    <!-- PHONE -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:textColor="@color/maib_text"
+        android:hint="@string/phone">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:textColor="@color/maib_text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- PASSWORD -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:textColor="@color/maib_text"
+        android:hint="@string/password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColor="@color/maib_text" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <!-- MESSAGE -->
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:text=""
+        android:textColor="@color/maib_red"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+
+    <!-- LOGIN BUTTON -->
+    <Button
+        android:id="@+id/btnLogin"
+        style="@style/MaibButtonPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/login_button"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:text="@string/create_account"
+        android:textColor="@color/maib_green"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

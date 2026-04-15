@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="maib_green">#40C1AC</color>
+    <color name="maib_green_dark">#2FAE9A</color>
+    <color name="maib_mint">#3ED598</color>
+    <color name="maib_yellow">#FFC649</color>
+    <color name="maib_red">#D32F2F</color>
+
+    <color name="maib_bg">#F6F7F8</color>
+    <color name="maib_white">#FFFFFF</color>
+    <color name="maib_text">#1A1A1A</color>
+    <color name="maib_text_muted">#1E1F22</color>
+
+</resources>
+

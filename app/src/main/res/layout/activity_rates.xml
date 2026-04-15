@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:clipToPadding="false"
+    android:background="@color/maib_bg">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:paddingTop="48dp"
+        android:text="Exchange rates"
+        android:textColor="@color/maib_green_dark"
+
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <!-- Date chip -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnDate"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:minHeight="40dp"
+        android:text="2025-12-25"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="@color/maib_white"
+        android:backgroundTint="@color/maib_green_dark"
+        app:cornerRadius="20dp"
+        app:strokeColor="@color/maib_white"
+        app:strokeWidth="1dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Table header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/maib_green_dark"
+
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:layout_marginBottom="6dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Currency"
+            android:textStyle="bold"
+            android:textColor="@color/maib_white"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="Buy"
+            android:textStyle="bold"
+            android:textColor="@color/maib_white"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="Sell"
+            android:textStyle="bold"
+            android:textColor="@color/maib_white"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <!-- List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvRates"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="10dp"/>
+</LinearLayout>
+

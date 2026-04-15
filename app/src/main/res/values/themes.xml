@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.SmartExchange" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/maib_green</item>
+        <item name="colorSecondary">@color/maib_yellow</item>
+        <item name="colorError">@color/maib_red</item>
+        <item name="android:colorBackground">@color/maib_bg</item>
+    </style>
+
+</resources>

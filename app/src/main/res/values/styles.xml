@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MaibButtonPrimary">
+        <item name="android:backgroundTint">@color/maib_green</item>
+        <item name="android:textColor">@color/maib_white</item>
+    </style>
+
+    <style name="MaibButtonAccent">
+        <item name="android:backgroundTint">@color/maib_mint</item>
+        <item name="android:textColor">@color/maib_white</item>
+    </style>
+    <style name="MaibDatePicker" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="colorPrimary">@color/maib_green_dark</item>
+        <item name="colorOnPrimary">@color/maib_white</item>
+        <item name="colorSecondary">@color/maib_green</item>
+    </style>
+
+
+
+</resources>

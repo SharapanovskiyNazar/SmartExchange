@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">SmartExchange</string>
+    <string name="create_account">Create account</string>
+    <string name="idnp">IDNP</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="phone">Phone</string>
+    <string name="password">Password</string>
+    <string name="register">REGISTER</string>
+    <string name="login_button">LOGIN</string>
+    <string name="smartexchange_logo_desc">SmartExchange Logo</string>
+
+    <!-- Added for activity_main.xml -->
+    <string name="hello">Hello!</string>
+    <string name="open">Open</string>
+    <string name="rates">Rates</string>
+    <string name="charts">Charts</string>
+    <string name="ic_add_account_desc">Add account</string>
+    <string name="ic_rates_desc">Rates</string>
+    <string name="ic_chart_desc">Charts</string>
+
+    <!-- Added for activity_chart.xml -->
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="show">Show</string>
+    <string name="choose_currency">Choose currency</string>
+    <string name="no_currencies">No currencies available</string>
+    <string name="no_rates_found">No rates found for selected period</string>
+    <string name="invalid_date_order">From date must be before or equal to To date</string>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top"
+    android:padding="24dp"
+    android:clipToPadding="false"
+    android:background="@color/maib_bg">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="420dp"
+        android:layout_height="260dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="18dp"
+
+        android:contentDescription="@string/smartexchange_logo_desc"
+        android:scaleType="fitCenter"
+        android:src="@drawable/smart_exchange_logo_horizontal" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-36dp"
+        android:text="Developed by"
+        android:textColor="@color/maib_text_muted"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Nazar and Elena Sharapanovsky"
+        android:textColor="@color/maib_text_muted"
+        android:textSize="10pt" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textStyle="bold"
+        android:text="Educational banking application"
+        android:textColor="@color/maib_text_muted"
+        android:textSize="10pt"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="© 2025"
+        android:textAlignment="viewStart"
+        android:textColor="@color/maib_text_muted"
+        android:textSize="10pt"
+        android:textStyle="bold" />
+</LinearLayout>
